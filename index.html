@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Viajes</title>
+    <link rel="icon" type="image/x-icon" href="images/icon-blog.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav id="nav" class="bg-[#FFFFFF] h-[80px] flex justify-between items-center ">
+        <div>
+            <a href="index.html"><img class="px-[10px] w-[150px] h-[50px] sm:w-[200px] sm:h-[60px]" src="images/logo.jpg" alt=""></a>  
+        </div>
+        <div class="hidden shake-slow sm:block">         
+            <img class="w-[50px] h-[50px]" src="images/tierra.png" alt="">
+        </div>
+        <div>
+            <ul class=" hidden  justify-center gap-[50px] items-center px-[50px] sm:flex">
+                <li class="cursor-pointer animate__animated animate__swing animate__repeat-2">Inicio</li>
+                <li class="cursor-pointer animate__animated animate__swing animate__repeat-2"><a href="#lugares">Lugares</a></li>
+                <li class="cursor-pointer animate__animated animate__swing animate__repeat-2"><a href="#tips">Tips</a></li>
+                <li class="cursor-pointer animate__animated animate__swing animate__repeat-2"><a href="#contactos">Contacto</a></li>
+            </ul>
+            <label for="btn-menu">  
+                <input class="hidden peer/menu" type="checkbox" id="btn-menu">
+                    <img class="w-[20px] h-[20px] mr-[50px] sm:hidden" src="images/btn-menu.png" alt="">
+                    <div class="hidden w-full h-[50px] bg-white absolute top-[100px] left-0 peer-checked/menu:block" id="menu-general">
+
+                        <ul class="flex justify-center py-[10px] gap-[35px]">
+                            <li class="cursor-pointer animate__animated animate__swing animate__repeat-2">Inicio</li>
+                            <li class="cursor-pointer animate__animated animate__swing animate__repeat-2"><a href="#lugares">Lugares</a></li>
+                            <li class="cursor-pointer animate__animated animate__swing animate__repeat-2"><a href="#tips">Tips</a></li>
+                            <li class="cursor-pointer animate__animated animate__swing animate__repeat-2">Contacto</li>
+                        </ul>
+                    </div>
+                 </label>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <section class="absolute px-[50px] py-[80px] font-serif font-bold flex flex-col gap-[10px]">
+            <h1 class="text-rose-900 text-5xl ">El placer de viajar ...<h1>
+                <h2 class="text-2xl">Conoce cuál será tu próximo destino y los mejores <p class="shake-horizontal">tips de viaje</p></h2>
+        </section>
+   
+        <div class="hidden min-h-screen justify-center items-center bg-fixed bg-no-repeat sm:flex" style="background-image: url('images/fondo.jpg');">
+        </div>
+        <div class="min-h-screen flex justify-center items-center bg-fixed sm:hidden bg-no-repeat " style="background-image: url('images/fondo-mb.webp');"></div>
+        <div class="p-10" id="lugares">
+            <h2 class="font-bold text-5xl">Mejores destinos</h2>
+            <br>
+            <br>
+            <p class="text-justify text-2xl sm:text-sm">Condé Nast Travaler es un editorial de turismo que cada año nos sorpronde con su reseña de los mejores destinos para visitar este año. Antes de que finalice el 2023, la revista ha dejado su información y con ella una serie de claves de alto valor para los viajeros.
+                <br>
+                <br>
+
+            La información que ofrece la resvita se basa en un exhaustivo trabajo por parte de sus creadores, quienes año tras año recorren y visitan diferentes destinos en todo el mundo. Además, ubican cruceros, seleccionan ciudades emblemáticas y al finalizar toman las mejores opciones y hoy las tenemos para ti.
+            </p>
+            <br>
+            <br>
+
+
+            <ul class="text-lg	 flex flex-col justify-center items-center">
+                <label for="btn-ny">  
+                <input class="hidden peer/ny" type="checkbox" id="btn-ny">
+                    <li id="ny" class="cursor-pointer  text-center py-[20px]">Nueva York, Estados Unidos</li>
+                    <img class="hidden w-screen h-[300px]  sm:peer-checked/ny:block"  id="nueva-york" src="images/nueva-york.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/ny:block sm:peer-checked/ny:hidden" id="nueva-york" src="images/nueva-york-mb.jpg" alt="">
+
+                 </label>
+
+                
+                
+                <label for="btn-es">  
+                <input class="hidden peer/es" type="checkbox" id="btn-es">
+                    <li class="cursor-pointer text-center py-[20px]">Mallorca España</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/es:block" id="mallorca" src="images/mallorca.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/es:block sm:peer-checked/es:hidden" id="nueva-york" src="images/mallorca-mb.jpg" alt="">
+            
+                </label>  
+
+                <label for="btn-au">  
+                <input class="hidden peer/au" type="checkbox" id="btn-au">
+                    <li class="cursor-pointer text-center py-[20px]">Sídney, Australia</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/au:block" id="sidney" src="images/australia.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/au:block sm:peer-checked/au:hidden" id="nueva-york" src="images/australia-mb.jpg" alt="">
+             
+                </label>
+
+
+                <label for="btn-po">  
+                <input class="hidden peer/po" type="checkbox" id="btn-po">
+                    <li class="cursor-pointer text-center py-[20px]">Melides, Portugal</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/po:block" id="portugal" src="images/portugal.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/po:block sm:peer-checked/po:hidden" id="nueva-york" src="images/portugal-mb.jpg" alt="">
+             
+                </label>
+                    
+                <label for="btn-ar">  
+                <input class="hidden peer/ar" type="checkbox" id="btn-ar">
+                    <li class="cursor-pointer text-center py-[20px]">Argentina</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/ar:block" id="argentina" src="images/argentina.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/ar:block sm:peer-checked/ar:hidden" id="nueva-york" src="images/argentina-mb.jpg" alt="">
+          
+                </label>  
+
+                <label for="btn-no">  
+                <input class="hidden peer/no" type="checkbox" id="btn-no">
+                    <li class="cursor-pointer text-center py-[20px]">Noruega</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/no:block" id="noruega" src="images/noruega.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/no:block sm:peer-checked/no:hidden" id="nueva-york" src="images/noruega-mb.jpg" alt="">
+          
+                </label>  
+
+                <label for="btn-ta">  
+                <input class="hidden peer/ta" type="checkbox" id="btn-ta">
+                    <li class="cursor-pointer text-center py-[20px]">Bangkok, Tailandia</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/ta:block"  id="tailandia" src="images/tailandia.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/ta:block sm:peer-checked/ta:hidden" id="nueva-york" src="images/tailandia-mb.jpg" alt="">
+             
+                </label>  
+
+                <label for="btn-an">  
+                <input class="hidden peer/an" type="checkbox" id="btn-an">
+                    <li class="cursor-pointer text-center py-[20px]">Antártida</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/an:block" id="antartida" src="images/antartida.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/an:block sm:peer-checked/an:hidden" id="nueva-york" src="images/antartida-mb.jpg" alt="">
+             
+                </label>  
+
+                <label for="btn-du">  
+                <input class="hidden peer/du" type="checkbox" id="btn-du">
+                    <li class="cursor-pointer text-center py-[20px]">Dubái, Emiratos Árabes Unidos</li>
+                    <img class="hidden w-screen h-[300px] sm:peer-checked/du:block" id="dubai" src="images/dubai.jpg" alt="">
+                    <img class="hidden w-screen h-[300px] peer-checked/du:block sm:peer-checked/du:hidden" id="nueva-york" src="images/dubai-mb.jpg" alt="">
+            
+                </label>
+            </ul>
+            <p class="text-right" data-aos="zoom-in"><a href="#nav">Volver</a></p>
+
+
+        </div>
+        <div class="hidden min-h-screen bg-center bg-no-repeat  bg-cover bg-fixed sm:flex" style="background-image: url('images/fondo2.webp');">
+        </div>
+        <div class="min-h-screen flex justify-center items-center bg-fixed  sm:hidden bg-no-repeat" style="background-image: url('images/fondo2-mb.webp');"></div>
+        <div class="p-10">
+            <h2 id="tips" class="font-bold text-4xl">Tips de viaje</h2>
+            
+            <br>
+            <br>
+            <p class="text-justify text-2xl sm:text-sm">Para viajar comodamente la mejor recomendación siempre es y será tener un: plan de viaje. Este plan debe contener información valiosa inherentes al destino. Temas como vialidad, trasnportes, moneda y tipos de cambio.
+            <br>
+            <br>
+            Por otra parte, en tema de seguridad, es necesario tener presente algunos aspectos como: situación económica, política y social del destino. Saber que ocurre en estos hambitos te ayudarán a manejarte mejor entre las comunidades.
+            <br>
+            <br>
+            Otro aspectos en materia de seguridad son las: zonas rojas o consideradas peligrosas en tu destino. Evita transitarlas a cualquier hora, para ello puedes consultar videos en redes sociales, preguntar en foros y chat o simplemente estar siempre alerta y en todo momento.
+            <br>
+            <br>
+            Para finalizar, siempre es importante conocer los requisitos migratorios que solicita un país a todo ciudadano extranjero que quiere visitar la localidad como turista. Verifica directamente en la embajada correspondiente en tu país o consulta su portal web. Valida la información y no escatimes en llevar todo lo que solicitan, incluso ayúdate en foros de personas que han visitado ese mismo destino.
+            </p>
+            <br>
+            <br>
+            <p class="text-right" data-aos="zoom-in"><a href="#nav">Volver</a></p>
+        </div>
+        <div class="min-h-screen bg-fixed bg-no-repeat bg-cover bg-no-repeat" style="background-image: url('images/fondo3.webp')">
+        </div>
+    </main>
+
+    <footer id="contactos">
+        <div class="bg-[#2D3F50] h-[80px]">
+            <ul class="flex justify-center gap-[40px] relative py-5 items-center ">
+                <div class="flex-grow border-t border-gray-400"></div>
+                <li><img class="w-[35px] h-[35px]" src="images/twitter.png" alt=""></li>
+                <li><img class="w-[35px] h-[35px]" src="images/whatsapp.png" alt=""></li>
+                <li><img class="w-[35px] h-[35px]" src="images/instagram.png" alt=""></li>
+                <div class="flex-grow border-t border-gray-400"></div>
+
+            </ul>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
